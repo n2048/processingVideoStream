@@ -26,3 +26,11 @@ connect to  `rtmp://$DOCKER_SERVER_IP/live`
 
 ## Screenshot from VLC
 ![Screenshot](Screenshot.png)
+
+
+## Collaborate
+For ideas and suggestions:
+- Use github available features.
+- Contact me on contact@n2048.com
+
+https://n2048.com/
