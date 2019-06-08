@@ -25,4 +25,4 @@ connect to  `rtmp://$DOCKER_SERVER_IP/live`
 
 
 ## Screenshot from VLC
-![Screenshot](screenshot.png)
+![Screenshot](Screenshot.png)
