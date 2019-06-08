@@ -1,4 +1,4 @@
-# processingVideoStreem
+# Video Streaming from Processing
 Stream video generated in real-time from a processing sketch
 
 ## Build image:
