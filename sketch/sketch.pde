@@ -10,7 +10,7 @@ int fps = 30;
 void setup() {
   fullScreen(P3D);
   frameRate(fps);
-  //pixelDensity(2);
+  //pixelDensity(2); // Not suported when using Xvfb as virtual display 
   background(0);
   stroke(255);
   fill(255);
@@ -34,19 +34,13 @@ void setup() {
 void draw() {
   background(0);
 
-  //translate(height/4, 0);
-
   PVector center = new PVector(height/2*(1.+sin(frameCount/1000.)), height/2*(1.+cos(frameCount/1000.)), -height);
   PVector camPos = new PVector(height/2, height/2, height/2*(1.+cos(frameCount/1000.)));
-
-  //perspective();
 
   camera(camPos.x, camPos.y, camPos.z, 
     center.x, center.y, center.z, 
     0, 1, 0);
 
-
-  //PVector mainTarget = new PVector(mouseX, mouseY, height*sin(frameCount/100.));
   PVector mainTarget = new PVector(cos(frameCount/1000.), sin(frameCount/1000.), cos(frameCount/1000.)).mult(height).add(new PVector(height, height, height)).div(2);
 
   followers.get(0).follow(mainTarget);
